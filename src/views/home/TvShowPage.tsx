@@ -1,5 +1,5 @@
 import Container from 'views/home/styles'
-import { Poster } from 'components';
+import { Poster, MovieInformations } from 'components';
 
 export  const TvShowPage = () => {
     
@@ -7,8 +7,8 @@ export  const TvShowPage = () => {
     return(
         <div>
             <Container>
-                <h1>TvShowPage</h1>
                 <Poster />
+                <MovieInformations />
             </Container>
         </div>
     );

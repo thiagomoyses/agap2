@@ -1,11 +1,14 @@
-import LeftContainer from "./styles";
+import { useState } from "react";
+import PosterContainer from "./styles";
 
 export const Poster = () => {
 
+    const [ poster, setPoster ] = useState({})
+
     return (
-        <LeftContainer>
+        <PosterContainer>
             <div>POSTER</div>
-        </LeftContainer>
+        </PosterContainer>
     );
 
 }

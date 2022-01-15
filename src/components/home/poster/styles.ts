@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LeftContainer = styled.div`
+const PosterContainer = styled.div`
 
     width: 40%;
     display: table-cell;
@@ -8,4 +8,4 @@ const LeftContainer = styled.div`
     padding: 2rem 2rem 2rem 4rem;
 `
 
-export default LeftContainer;
+export default PosterContainer;
