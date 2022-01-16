@@ -1,21 +1,23 @@
-import PosterContainer from "./styles";
 import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getPoster } from "redux/effects/PosterEffect";
+import { AppState } from 'redux/store'
 
-import { ApplicationState } from "store";
+import PosterContainer from "./styles";
 
 const PosterImage = () => {
 
-    const PosterPic = useSelector((state: ApplicationState) => state.poster.teste)
     const dispatch = useDispatch();
 
     useEffect(() => {
-        
-    });
+        dispatch(getPoster());
+    }, [dispatch]);
+
+    const poster = useSelector((state: AppState) => state.poster.poster.image.original);
 
     return (
         <PosterContainer>
-            <h1>{ PosterPic }</h1>
+            <img src={poster} alt="power-puff"/> 
         </PosterContainer>
     );
 
