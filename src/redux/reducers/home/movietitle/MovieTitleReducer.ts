@@ -4,7 +4,7 @@ import {    GET_MOVIE_TITLE,
 } from "redux/types/home/movietitle/MovieTitleTypes";
 
 const initialStateGetMovieTitle: IGetMovieTitleStateType = {
-    name: {title: {name: ""}}
+    name: {name: ''}
 }
 
 export const getMovieTitleReducer = (

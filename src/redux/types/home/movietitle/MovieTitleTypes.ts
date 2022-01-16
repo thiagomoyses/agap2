@@ -3,7 +3,7 @@ import { IMovieTitle } from "redux/interfaces/home/movietitle/MovieTitleInterfac
 export const GET_MOVIE_TITLE = 'GET_MOVIE_TITLE';
 
 export interface IGetMovieTitleStateType{
-    name: IMovieTitle
+    name: IMovieTitle,
 }
 
 interface GetMovieTitleAction{

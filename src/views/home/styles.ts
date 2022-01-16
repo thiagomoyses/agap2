@@ -7,7 +7,7 @@ const Container = styled.div`
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     background: -webkit-gradient(linear,right top,left top,from(#fd929f),to(#bfe9ff));
-    background: linear-gradient(270deg , #fd929f,#bfe9ff);
+    background: linear-gradient(270deg , #A9CBD7,#bfe9ff);
     opacity: .8;
     height: 65rem;
     margin-top: 3rem;
