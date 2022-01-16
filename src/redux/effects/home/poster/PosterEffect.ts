@@ -1,6 +1,6 @@
-import { getPosterAction } from "redux/actions/PosterActions";
+import { getPosterAction } from "redux/actions/home/poster/PosterActions";
 import { Dispatch } from "redux";
-import { PosterActionType } from "redux/types/PosterTypes";
+import { PosterActionType } from "redux/types/home/poster/PosterTypes";
 
 export const getPoster = () => {
 

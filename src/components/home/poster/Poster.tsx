@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getPoster } from "redux/effects/PosterEffect";
+import { getPoster } from "redux/effects/home/poster/PosterEffect";
 import { AppState } from 'redux/store'
 
 import PosterContainer from "./styles";

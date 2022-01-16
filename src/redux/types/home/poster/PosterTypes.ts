@@ -1,4 +1,4 @@
-import { IPoster } from "redux/interfaces/PosterInterface";
+import { IPoster } from "redux/interfaces/home/poster/PosterInterface";
 
 export const GET_POSTER = 'GET_POSTER';
 
