@@ -1,14 +1,25 @@
-import { useState } from "react";
 import PosterContainer from "./styles";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-export const Poster = () => {
+import { ApplicationState } from "store";
 
-    const [ poster, setPoster ] = useState({})
+const PosterImage = () => {
+
+    const PosterPic = useSelector((state: ApplicationState) => state.poster.teste)
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        
+    });
 
     return (
         <PosterContainer>
-            <div>POSTER</div>
+            <h1>{ PosterPic }</h1>
         </PosterContainer>
     );
 
 }
+
+
+export default PosterImage;

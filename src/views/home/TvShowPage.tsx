@@ -1,13 +1,13 @@
 import Container from 'views/home/styles'
-import { Poster, MovieInformations } from 'components';
+import { MovieInformations } from 'components';
+import PosterImage from 'components/home/poster/Poster'
 
 export  const TvShowPage = () => {
-    
 
     return(
         <div>
             <Container>
-                <Poster />
+                <PosterImage />
                 <MovieInformations />
             </Container>
         </div>
