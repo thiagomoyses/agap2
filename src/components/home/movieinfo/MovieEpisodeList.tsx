@@ -19,6 +19,7 @@ const MovieEpisodes = () => {
     const movieEpisodesItem = movieEpisodes.episodes.map((episode: IMovieEpisodeList) => (
         <div key={ episode.id }>
             <h1>{ episode.name }</h1>
+            <br/>
         </div>
     ))
 
