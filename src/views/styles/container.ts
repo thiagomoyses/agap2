@@ -28,16 +28,18 @@ export const ContainerRight = styled.div`
 `
 
 export const ContainerRightTitleDescription = styled.div`
-    padding-bottom: 70px;
+    padding-bottom: 50px; /*70*/ 
+    padding-top: 20px;
     text-align: center;
 `
 
 export const ContainerRighDetailsTItleDescription = styled.div`
-    padding-bottom: 70px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     text-align: center;
     h1{
         font-size: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     };
 `
 
@@ -45,7 +47,7 @@ export const SummaryEpisodeDescription = styled.div`
 
     overflow-y: scroll;
     height: 200px;
-
+    text-align: left;
 `
 
 export const ContainerRightEpisodeList = styled.div`
