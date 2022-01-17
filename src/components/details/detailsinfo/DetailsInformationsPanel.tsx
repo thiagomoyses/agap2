@@ -1,14 +1,14 @@
-import { DetailsInformationPanelContainer } from "./styles";
 import DetailsDescription from "./DetailsDescription";
 import DetailsTitle from "./DetailsTitle"
+import { ContainerRighDetailsTItleDescription } from "views/styles/container";
 
 const DetailsInformationPanel = () => {
 
     return(
-        <DetailsInformationPanelContainer>
+        <ContainerRighDetailsTItleDescription>
             <DetailsTitle />
             <DetailsDescription />
-        </DetailsInformationPanelContainer>
+        </ContainerRighDetailsTItleDescription>
     );
 }
 

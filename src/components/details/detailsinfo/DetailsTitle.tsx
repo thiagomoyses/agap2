@@ -1,8 +1,6 @@
 import { useSelector } from "react-redux";
 import { AppState } from "redux/store";
 
-import { DetailsTitleContainer } from "./styles";
-
 const DetailsTitle = () => {
 
     const title = useSelector((state: AppState) => state.episodeDetails.request.name);
@@ -10,9 +8,9 @@ const DetailsTitle = () => {
     const doneTitle = title ? <h1>{ title }</h1> : false;
 
     return (
-        <DetailsTitleContainer>
-            { doneTitle }
-        </DetailsTitleContainer>
+        <div>
+            <h1>{ doneTitle }</h1>
+        </div>
     );
 }
 

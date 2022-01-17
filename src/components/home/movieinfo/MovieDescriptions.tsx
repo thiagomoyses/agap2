@@ -1,8 +1,6 @@
 import { useSelector } from "react-redux";
 import { AppState } from 'redux/store'
 
-import { MovieTitleContainer } from "./styles";
-
 const MovieDescription = () => {
 
 
@@ -11,9 +9,7 @@ const MovieDescription = () => {
     const cleanMovieDescription = movieDescription.replace(/(<([^>]+)>)/ig,"")
 
     return (
-        <MovieTitleContainer>
-            <h2>{ cleanMovieDescription }</h2>
-        </MovieTitleContainer>
+        <h2>{ cleanMovieDescription }</h2>
     );
 }
 

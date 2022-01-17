@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useDispatch} from "react-redux";
 import { getTvShowPage } from "redux/effects/home/TvShowPAgeEffect";
-
-import Container from 'views/home/styles'
 import { MovieInformations } from 'components';
 import PosterImage from 'components/home/poster/Poster'
+
+import { Container, ContainerLeft, ContainerRight } from "views/styles/container";
 
 export  const TvShowPage = () => {
 
@@ -14,12 +14,15 @@ export  const TvShowPage = () => {
     }, [dispatch]);
 
     return(
-        <div>
             <Container>
-                <PosterImage />
-                <MovieInformations />
+                <ContainerLeft>
+                    <PosterImage />
+                </ContainerLeft>
+                
+                <ContainerRight>
+                    <MovieInformations />
+                </ContainerRight>
             </Container>
-        </div>
     );
 
 }

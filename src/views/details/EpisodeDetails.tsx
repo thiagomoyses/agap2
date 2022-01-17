@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch} from "react-redux";
 
-import ContainerEpiDetails from './styles'
 import DetailsImage from 'components/details/detailsimage/DetailsImage';
 import DetailsInformationPanel from 'components/details/detailsinfo/DetailsInformationsPanel';
 import { getEpisodeDetails } from "redux/effects/detalis/EpisodeDetailsEffect";
+
+import { Container, ContainerLeft, ContainerRight } from "views/styles/container";
 
 export const EpisodeDetails = () => {
 
@@ -18,10 +19,15 @@ export const EpisodeDetails = () => {
     });
 
     return(
-        <ContainerEpiDetails>
-            <DetailsImage />
-            <DetailsInformationPanel />
-        </ContainerEpiDetails>
+        <Container>
+            <ContainerLeft>
+                <DetailsImage />
+            </ContainerLeft>
+
+            <ContainerRight>
+                <DetailsInformationPanel />
+            </ContainerRight>
+        </Container>
     );
 
 }

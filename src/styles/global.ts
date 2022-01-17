@@ -2,31 +2,32 @@ import { createGlobalStyle } from "styled-components";
 
 const globalStyle = createGlobalStyle`
 
+    /* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
     *{
-        padding: 0;
         margin: 0;
+        padding: 0;
         box-sizing: border-box;
+        font-family: 'Creepster', cursive;
     }
 
-    body{
-        background: #f5f5f5;
-        font-size: 14px;
-        color: 333;
-        font-family: sans-serif;
+    img {
+        border: 1px solid #EE2282;
+        width: 100%;
     }
 
-    button{
-        background-color: none;
-        border: none;
-        outline: none;
+    h1 {
+        color: #EE2282;
     }
 
+    li{
+        list-style-type: none;
+        text-decoration:none;
+    }
     a{
-        text-decoration: none;
-        outline: none;
+        text-decoration:none
     }
-
 
 `
 
-export default globalStyle;
+export default globalStyle ;

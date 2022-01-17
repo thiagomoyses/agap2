@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import { getMovieEpisodes } from "redux/effects/home/movieepisodelist/MovieEpisodeListEffect";
 import { IMovieEpisodeList } from "redux/interfaces/home/movieepisodelist/MovieEpisodeList";
 
-import { MovieEpisodesContainer } from "./styles";
-
 const MovieEpisodes = () => {
 
     const dispatch = useDispatch();
@@ -21,18 +19,15 @@ const MovieEpisodes = () => {
         <Link
             to={`/details/${ episode.id }`}
             key={ episode.id }
-        >
-            <div>
-                <h1>{ episode.name }</h1>
-                <br/>
-            </div>
+        >   
+            <li><p>{ episode.name }</p></li>
         </Link>
     ))
 
     return (
-        <MovieEpisodesContainer>
+        <div>
             { movieEpisodesItem }
-        </MovieEpisodesContainer>
+        </div>
     );
 
 }
