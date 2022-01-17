@@ -4,6 +4,8 @@
 
 >  #A small web app with two pages (routes): a details page for the TV show "Powerpuff Girls", and an episode detail page with information about specific episodes.
 
+## [DEPLOYED VERSION HERE!](https://heuristic-kalam-99af77.netlify.app/)
+
 ## 🚀 Instaling and running: Powerpuff Girls Application
 
 In the project directory, you can run:
