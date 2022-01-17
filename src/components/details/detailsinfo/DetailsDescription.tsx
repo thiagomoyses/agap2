@@ -10,8 +10,6 @@ const DetailsDescription = () => {
 
     if (description){
         cleanDescription = description.replace(/(<([^>]+)>)/ig,"")
-    } else{
-        cleanDescription = '';
     }
 
     return (
