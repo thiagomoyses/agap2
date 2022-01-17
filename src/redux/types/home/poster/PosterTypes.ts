@@ -6,7 +6,7 @@ export interface IGetPosterStateType{
     poster: IPoster;
 }
 
-export interface GetPosterActionType {
+interface GetPosterActionType {
     type: typeof GET_POSTER
     payload: IPoster;
   }

@@ -7,7 +7,7 @@ export const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<TvShowPage />} />
-                <Route path="/details" element={<EpisodeDetails />} />
+                <Route path="/details/:id" element={<EpisodeDetails />} />
                 <Route path="*" element={ <Navigate to="/" /> } />
             </Routes>
         </BrowserRouter>

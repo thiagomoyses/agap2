@@ -1,9 +1,14 @@
+import ContainerEpiDetails from './styles'
+import DetailsImage from 'components/details/detailsimage/DetailsImage';
+import DetailsInformationPanel from 'components/details/detailsinfo/DetailsInformationsPanel';
+
 export const EpisodeDetails = () => {
 
     return(
-        <div>
-            <h1>EPISODE DETAILS</h1>
-        </div>
+        <ContainerEpiDetails>
+            <DetailsImage />
+            <DetailsInformationPanel />
+        </ContainerEpiDetails>
     );
 
 }
