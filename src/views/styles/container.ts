@@ -36,9 +36,16 @@ export const ContainerRighDetailsTItleDescription = styled.div`
     padding-bottom: 70px;
     text-align: center;
     h1{
-        font-size: 20px;
+        font-size: 30px;
         padding-bottom: 50px;
-    }
+    };
+`
+
+export const SummaryEpisodeDescription = styled.div`
+
+    overflow-y: scroll;
+    height: 200px;
+
 `
 
 export const ContainerRightEpisodeList = styled.div`

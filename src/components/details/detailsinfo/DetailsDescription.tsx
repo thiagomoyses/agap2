@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { AppState } from "redux/store";
+import { SummaryEpisodeDescription } from "views/styles/container";
 
 const DetailsDescription = () => {
 
@@ -14,9 +15,9 @@ const DetailsDescription = () => {
     }
 
     return (
-        <div>
+        <SummaryEpisodeDescription>
             <h2>{ cleanDescription }</h2>
-        </div>
+        </SummaryEpisodeDescription>
     );
 
 
