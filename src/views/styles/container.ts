@@ -20,17 +20,29 @@ export const ContainerLeft = styled.div`
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 2rem 2rem 4rem;
+    @media (max-width: 891px) {
+        width: auto;
+    }
 `
-
 export const ContainerRight = styled.div`
     display: table-cell;
     padding: 1rem 2rem;
 `
 
 export const ContainerRightTitleDescription = styled.div`
-    padding-bottom: 50px; /*70*/ 
+    padding-bottom: 50px;
     padding-top: 20px;
     text-align: center;
+    @media (max-width: 891px) {
+        padding-bottom: 0;
+        padding-top: 50px;
+        h1{
+            font-size: 50%;
+        };
+        h2{
+            font-size: 50%;
+        };
+    }
 `
 
 export const ContainerRighDetailsTItleDescription = styled.div`
@@ -41,6 +53,14 @@ export const ContainerRighDetailsTItleDescription = styled.div`
         font-size: 30px;
         padding-bottom: 20px;
     };
+    @media (max-width: 891px) {
+        h1{
+            font-size: 50%;
+        }
+        h2{
+            font-size: 50%;
+        }
+    }
 `
 
 export const SummaryEpisodeDescription = styled.div`
@@ -48,6 +68,7 @@ export const SummaryEpisodeDescription = styled.div`
     overflow-y: scroll;
     height: 200px;
     text-align: left;
+    
 `
 
 export const ContainerRightEpisodeList = styled.div`
