@@ -14,6 +14,7 @@ export const MovieInformations = () => {
                 <br/>
                 <MovieDescription />
             </ContainerRightTitleDescription>
+            
             <ContainerRightEpisodeList>
                 <MovieEpisodes />
             </ContainerRightEpisodeList>
