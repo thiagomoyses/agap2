@@ -1,21 +1,11 @@
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { AppState } from "redux/store";
-import { getDetailsDescription } from "redux/effects/detalis/detailsdescription/DetailsDescriptionEffect";
 
 import { DetailsTitleContainer } from "./styles";
 
 const DetailsDescription = () => {
 
-    const { id } = useParams();
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getDetailsDescription(id))
-    })
-
-    const description = useSelector((state: AppState) => state.detailsDescription.sumary.summary);
+    const description = useSelector((state: AppState) => state.episodeDetails.request.summary);
 
     var cleanDescription = '';
 

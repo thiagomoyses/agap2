@@ -1,19 +1,11 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getMovieTitle } from "redux/effects/home/movietitle/MovieTitleEffect";
+import { useSelector } from "react-redux";
 import { AppState } from 'redux/store'
 
 import { MovieTitleContainer } from "./styles";
 
 const MovieTitle = () => {
 
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getMovieTitle());
-    }, [dispatch]);
-
-    const movieTitle = useSelector((state: AppState) => state.movieTitle.name.name);
+    const movieTitle = useSelector((state: AppState) => state.tvShowPage.request.name);
 
     return (
         <MovieTitleContainer>
